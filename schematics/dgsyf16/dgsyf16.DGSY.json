@@ -152,6 +152,135 @@
                   "orientation" : "LEFT",
                   "responsive" : false
                 }
+              }, {
+                "code" : 989860243,
+                "componentType" : "WPOPUP",
+                "description" : "ContextMenuGerarInconsistencias",
+                "displayOrder" : 3,
+                "menuItems" : [ {
+                  "aiContextMenu" : false,
+                  "alignment" : "E",
+                  "children" : [ ],
+                  "code" : 989880018,
+                  "componentType" : "MENUITEM",
+                  "enabled" : true,
+                  "events" : [ {
+                    "eventActions" : [ {
+                      "actionOrder" : 1,
+                      "actionSeq" : 989889922,
+                      "compReactivateCode" : 200845442,
+                      "eventAction" : "PROC",
+                      "multipleBodyItemsSupported" : false,
+                      "params" : [ {
+                        "code" : 990256323,
+                        "masterCode" : 307162517,
+                        "masterName" : "DT_INICIO",
+                        "originParam" : "OBJECT",
+                        "parameterName" : "P_DT_INICIO",
+                        "parameterSeq" : 1
+                      }, {
+                        "code" : 990256324,
+                        "masterCode" : 307162517,
+                        "masterName" : "DT_FIM",
+                        "originParam" : "OBJECT",
+                        "parameterName" : "P_DT_FIM",
+                        "parameterSeq" : 2
+                      } ],
+                      "procedureCode" : 10170197,
+                      "reloadLine" : "S"
+                    } ],
+                    "eventSeq" : 989889921,
+                    "eventType" : "C"
+                  } ],
+                  "expressionCode" : 290700,
+                  "menuCode" : 989860243,
+                  "metadataFile" : false,
+                  "name" : "Generate inconsistency ",
+                  "objectType" : "COMPONENT",
+                  "order" : 1,
+                  "parentObjectCode" : 989860243,
+                  "rules" : [ ],
+                  "text" : "Generate inconsistency ",
+                  "topList" : false,
+                  "type" : "STANDARD",
+                  "visible" : true
+                } ],
+                "objectType" : "COMPONENT",
+                "parentObjectCode" : 200845442,
+                "popUpHandle" : "S"
+              }, {
+                "children" : [ {
+                  "children" : [ {
+                    "children" : [ {
+                      "children" : [ ],
+                      "cmdkMetadataCustomization" : false,
+                      "code" : 991630459,
+                      "componentType" : "WCPANEL",
+                      "customProperties" : {
+                        "showDynamicReport" : "N"
+                      },
+                      "description" : "CPanel",
+                      "dictionaryCode" : 991256914,
+                      "displayOrder" : 1,
+                      "legends" : [ ],
+                      "metadataFile" : true,
+                      "objectType" : "COMPONENT",
+                      "params" : [ {
+                        "code" : 991639040,
+                        "function" : 0,
+                        "masterCode" : 200845442,
+                        "masterName" : "NR_PRESCRICAO",
+                        "originParam" : "OBJECT",
+                        "parameterCode" : 0,
+                        "parameterName" : "NR_PRESCRICAO",
+                        "parameterSeq" : 0,
+                        "parentObjectCode" : 991630459
+                      }, {
+                        "code" : 991650227,
+                        "function" : 0,
+                        "masterCode" : 200845442,
+                        "masterName" : "CD_MATERIAL",
+                        "originParam" : "OBJECT",
+                        "parameterCode" : 0,
+                        "parameterName" : "CD_MATERIAL",
+                        "parameterSeq" : 1,
+                        "parentObjectCode" : 991630459
+                      } ],
+                      "parentObjectCode" : 991620946,
+                      "properties" : {
+                        "autoCreateChild" : false,
+                        "editableGrid" : false,
+                        "emptyActivation" : false,
+                        "multiSelection" : false,
+                        "paginationType" : "P",
+                        "reportConfigVisible" : false,
+                        "saveGridColumnOrder" : false,
+                        "selectFirstRow" : false,
+                        "unificarCountRegistros" : false,
+                        "useNewGrid" : true
+                      },
+                      "reports" : [ ]
+                    } ],
+                    "code" : 991620946,
+                    "description" : "Region 0",
+                    "displayOrder" : 1,
+                    "objectType" : "REGION",
+                    "parentObjectCode" : 991620945
+                  } ],
+                  "code" : 991620945,
+                  "description" : "Master region",
+                  "masterRegionType" : "LAYOUT_A",
+                  "objectType" : "MASTER_REGION",
+                  "parentObjectCode" : 991609673
+                } ],
+                "code" : 991609673,
+                "description" : "Panel",
+                "displayOrder" : 1,
+                "expressionCode" : 314879,
+                "expressionDescription" : "Panel",
+                "objectType" : "PANEL",
+                "panelWidth" : 4,
+                "parentObjectCode" : 200845442
               } ],
               "cmdkMetadataCustomization" : false,
               "code" : 200845442,
@@ -185,7 +314,8 @@
             "description" : "Region 0",
             "displayOrder" : 1,
             "objectType" : "REGION",
-            "parentObjectCode" : 200840777
+            "parentObjectCode" : 200840777,
+            "tabGroupSelection" : false
           } ],
           "code" : 200840777,
           "description" : "Master region",
